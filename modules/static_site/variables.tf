@@ -19,3 +19,9 @@ variable "logging_bucket" {
   type    = string
   default = "ethinicity-facts-and-figures-logs"
 }
+variable "domain_name" {
+  type = string
+}
+variable "static_site_subdomain" {
+  type = string
+}

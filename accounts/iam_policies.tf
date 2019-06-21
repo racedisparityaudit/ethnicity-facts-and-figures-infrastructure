@@ -4,6 +4,14 @@ data "aws_iam_policy" "SecretsManagerReadWrite" {
   arn = "arn:aws:iam::aws:policy/SecretsManagerReadWrite"
 }
 
+data "aws_iam_policy" "AWSLambdaFullAccess" {
+  arn = "arn:aws:iam::aws:policy/AWSLambdaFullAccess"
+}
+
+data "aws_iam_policy" "IAMFullAccess" {
+  arn = "arn:aws:iam::aws:policy/IAMFullAccess"
+}
+
 data "aws_iam_policy" "AmazonS3FullAccess" {
   arn = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
 }
@@ -12,12 +20,20 @@ data "aws_iam_policy" "CloudFrontFullAccess" {
   arn = "arn:aws:iam::aws:policy/CloudFrontFullAccess"
 }
 
-data "aws_iam_policy" "IAMUserChangePassword" {
-  arn = "arn:aws:iam::aws:policy/IAMUserChangePassword"
-}
-
 data "aws_iam_policy" "AmazonRoute53FullAccess" {
   arn = "arn:aws:iam::aws:policy/AmazonRoute53FullAccess"
+}
+
+data "aws_iam_policy" "AWSCertificateManagerFullAccess" {
+  arn = "arn:aws:iam::aws:policy/AWSCertificateManagerFullAccess"
+}
+
+data "aws_iam_policy" "AmazonWorkMailFullAccess" {
+  arn = "arn:aws:iam::aws:policy/AmazonWorkMailFullAccess"
+}
+
+data "aws_iam_policy" "IAMUserChangePassword" {
+  arn = "arn:aws:iam::aws:policy/IAMUserChangePassword"
 }
 
 resource "aws_iam_policy" "AssumeRoleInfrastructure" {
