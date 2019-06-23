@@ -36,6 +36,14 @@ data "aws_iam_policy" "IAMUserChangePassword" {
   arn = "arn:aws:iam::aws:policy/IAMUserChangePassword"
 }
 
+data "aws_iam_policy" "AWSCloudTrailFullAccess" {
+  arn = "arn:aws:iam::aws:policy/AWSCloudTrailFullAccess"
+}
+
+data "aws_iam_policy" "AmazonGuardDutyFullAccess" {
+  arn = "arn:aws:iam::aws:policy/AmazonGuardDutyFullAccess"
+}
+
 resource "aws_iam_policy" "AssumeRoleInfrastructure" {
   name        = "AssumeRoleInfrastructure"
   description = "Allows users to assume the RDU infrastructure role and make changes to AWS resources."

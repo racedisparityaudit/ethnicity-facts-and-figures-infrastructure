@@ -1,11 +1,11 @@
 resource "aws_iam_user" "sam" {
   name          = "sam"
-  force_destroy = false
+  force_destroy = true # Required to destroy users where MFA/other resources aren't managed by terraform - like us
 }
 
 resource "aws_iam_user" "frankie" {
   name          = "frankie"
-  force_destroy = false
+  force_destroy = true # Required to destroy users where MFA/other resources aren't managed by terraform - like us
 }
 
 resource "aws_iam_user" "deploy_static_site" {
