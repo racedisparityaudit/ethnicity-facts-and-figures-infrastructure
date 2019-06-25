@@ -1,0 +1,10 @@
+sudo: false
+dist: trusty
+lang: bash
+
+install:
+  - curl -sSfL -o /tmp/terraform.zip "https://releases.hashicorp.com/terraform/0.12.2/terraform_0.12.2_linux_amd64.zip"
+  - unzip /tmp/terraform.zip -d "$HOME/bin"
+  - terraform --version
+script:
+  - ./test.sh
