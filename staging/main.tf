@@ -50,7 +50,7 @@ module "static_site" {
   error_pages_bucket = "ethnicity-facts-and-figures-staging-error-pages"
   uploads_bucket     = "rd-cms-staging-uploads"
   static_site_url    = "staging.ethnicity-facts-figures.service.gov.uk"
-  cloudfront_lambdas = ["arn:aws:lambda:us-east-1:${data.aws_caller_identity.current.account_id}:function:httpBasicAuth:12"]
+  cloudfront_lambdas = ["arn:aws:lambda:us-east-1:${data.aws_caller_identity.current.account_id}:function:httpBasicAuth:13"]
 
   domain_name           = "ethnicity-facts-figures.service.gov.uk."
   static_site_subdomain = "staging"
