@@ -42,3 +42,8 @@ resource "aws_iam_role_policy_attachment" "infrastructure_role_guardduty_full_ac
   role       = "${aws_iam_role.infrastructure.name}"
   policy_arn = "${data.aws_iam_policy.AmazonGuardDutyFullAccess.arn}"
 }
+
+resource "aws_iam_role_policy_attachment" "infrastructure_role_secrets_manager_full_access" {
+  role       = "${aws_iam_role.infrastructure.name}"
+  policy_arn = "${data.aws_iam_policy.SecretsManagerReadWrite.arn}"
+}
