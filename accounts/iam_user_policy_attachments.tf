@@ -16,8 +16,3 @@ resource "aws_iam_user_policy_attachment" "staging_cms_copy_prod_uplods" {
   user       = "${aws_iam_user.deploy_static_site_staging.name}"
   policy_arn = "${aws_iam_policy.ProductionUploadsReadOnly.arn}"
 }
-
-resource "aws_iam_user_policy_attachment" "security_auditor" {
-  user       = "${aws_iam_user.security_auditor.name}"
-  policy_arn = "${data.aws_iam_policy.SecurityAudit.arn}"
-}
