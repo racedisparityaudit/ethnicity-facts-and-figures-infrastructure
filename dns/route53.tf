@@ -5,6 +5,7 @@ resource "aws_route53_record" "root_caa" {
   ttl     = 300
 
   records = [
+    "0 issue \"letsencrypt.org\"",
     "0 issuewild \"amazontrust.com\"",
     "0 issuewild \"awstrust.com\"",
     "0 issuewild \"amazonaws.com\"",
