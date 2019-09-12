@@ -6,7 +6,7 @@ for automated management.
 
 ## Dependencies
 
-* Install [Terraform v0.12.2](https://releases.hashicorp.com/terraform/0.12.2/)
+* Install [Terraform v0.12.8](https://releases.hashicorp.com/terraform/0.12.8/)
 * Install [aws-vault](https://github.com/99designs/aws-vault)
 
 ## Setup

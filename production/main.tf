@@ -22,7 +22,7 @@ provider "aws" {
 }
 
 terraform {
-  required_version = "0.12.2" # Update all other terraform.required_version definitions if you change this.
+  required_version = "0.12.8" # Update all other terraform.required_version definitions if you change this.
   backend "s3" {
     bucket = "ethnicity-facts-and-figures-terraform"
     key    = "production.tfstate"
