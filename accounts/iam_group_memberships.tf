@@ -3,7 +3,8 @@ resource "aws_iam_group_membership" "all_users" {
   group = "${aws_iam_group.all_users.name}"
 
   users = [
-    "${aws_iam_user.frankie.name}"
+    "${aws_iam_user.frankie.name}",
+    "${aws_iam_user.mehmet.name}"
   ]
 }
 
@@ -12,7 +13,8 @@ resource "aws_iam_group_membership" "developers" {
   group = "${aws_iam_group.developers.name}"
 
   users = [
-    "${aws_iam_user.frankie.name}"
+    "${aws_iam_user.frankie.name}",
+    "${aws_iam_user.mehmet.name}"
   ]
 }
 
@@ -21,6 +23,7 @@ resource "aws_iam_group_membership" "infrastructure" {
   group = "${aws_iam_group.infrastructure.name}"
 
   users = [
-    "${aws_iam_user.frankie.name}"
+    "${aws_iam_user.frankie.name}",
+    "${aws_iam_user.mehmet.name}"
   ]
 }
